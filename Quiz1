@@ -1,0 +1,18 @@
+// Quiz 1
+
+const fruits = ['banana', 'strawberry', 'grape', 'strawberry'];
+console.log(fruits);
+
+function strawberryToKiwi() {
+  for (i = 0; i < fruits.length; i++) {
+    if (fruits.includes('strawberry') === true) {
+      let index = fruits.indexOf('strawberry');
+      fruits[index] = 'kiwi';
+    } else {
+      return;
+    }
+  }
+}
+
+strawberryToKiwi();
+console.log(fruits);
